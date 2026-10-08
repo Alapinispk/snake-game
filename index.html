@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jeu du Serpent (Snake Game)</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>JEU DU SERPENT</h1>
+        <div class="dashboard">
+            <div>Score: <span id="score">0</span></div>
+            <div>Niveau: <span id="level">1</span></div>
+            <div>Meilleur Score: <span id="high-score">0</span></div>
+        </div>
+
+        <div id="game-container">
+            <canvas id="gameCanvas" width="900" height="600"></canvas>
+
+            <!-- Game Over / Start Overlay -->
+            <div id="overlay" class="overlay">
+                <h2 id="overlay-title">Jeu du Serpent</h2>
+                <p id="overlay-msg">Utilisez les flèches du clavier pour diriger le serpent.</p>
+                <button id="start-btn" class="btn">Jouer</button>
+            </div>
+        </div>
+
+        <p class="controls-hint">Contrôles : Flèches directionnelles (Haut, Bas, Gauche, Droite)
+            <br>Appuyez sur "P" pour mettre le jeu en pause ou reprendre.
+            <br> Ce jeu a été développé par <a href="https://github.com/Alapinispk/snake-game" target="_blank">Spk Technologie</a>.
+        </p>
+        <script src="script1.js"></script>
+    </body>
+</html>
